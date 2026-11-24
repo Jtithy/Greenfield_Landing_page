@@ -1,0 +1,134 @@
+/* NAVBAR */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: #174d35;
+}
+
+.nav-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-logo span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #198754;
+}
+
+/* Admission Button */
+
+.nav-cta a {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: #198754;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    transition: all 0.3s ease;
+}
+
+.nav-cta a:hover {
+    background-color: #146c43;
+    transform: translateY(-2px);
+}
+
+
+/* ================= RESPONSIVE NAVBAR ================= */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-cta {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-logo span {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-cta a {
+        padding: 10px 18px;
+    }
+
+}
