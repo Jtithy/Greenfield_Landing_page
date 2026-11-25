@@ -790,3 +790,111 @@ nav {
     }
 
 }
+
+/* WHY CHOOSE OUR SCHOOL */
+
+#why-choose-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    background-color: #f8faf9;
+}
+
+#why-choose-us .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#why-choose-us .section-heading p {
+    color: #198754;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+#why-choose-us .section-heading h2 {
+    color: #174d35;
+    font-size: 36px;
+    margin: 0;
+}
+
+.reasons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.reasons-container article {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    border: 1px solid #e2eee7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.reasons-container article::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: #198754;
+    border-radius: 5px;
+    margin: 0 auto 22px;
+    transition: width 0.3s ease;
+}
+
+.reasons-container article:hover {
+    transform: translateY(-7px);
+    border-color: #198754;
+    box-shadow: 0 10px 25px rgba(25, 135, 84, 0.12);
+}
+
+.reasons-container article:hover::before {
+    width: 70px;
+}
+
+.reasons-container article h3 {
+    color: #174d35;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.reasons-container article p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .reasons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #why-choose-us {
+        padding: 60px 20px;
+    }
+
+    #why-choose-us .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .reasons-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reasons-container article {
+        padding: 30px 20px;
+    }
+}
