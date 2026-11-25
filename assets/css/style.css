@@ -1773,3 +1773,183 @@ nav {
         font-size: 15px;
     }
 }
+
+/* NOTICE BOARD */
+
+#notice-board {
+    padding: 80px 8%;
+    background-color: #f8fafc;
+}
+
+/* Section Heading */
+#notice-board .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#notice-board .section-heading p {
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#notice-board .section-heading h2 {
+    color: #243447;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Notices Container */
+.notices-container {
+    max-width: 1150px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Notice Card */
+.notices-container article {
+    position: relative;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    border-top: 4px solid #27ae60;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.notices-container article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+/* Notice Date */
+.notices-container article time {
+    display: inline-block;
+    color: #e69500;
+    background-color: #fff5df;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Notice Title */
+.notices-container article h3 {
+    color: #243447;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Notice Description */
+.notices-container article p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Read More Link */
+.notices-container article a {
+    display: inline-block;
+    color: #27ae60;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.notices-container article a:hover {
+    color: #219150;
+    padding-left: 5px;
+}
+
+.notices-container article a::after {
+    content: " →";
+}
+
+/* View All Notices Button */
+#notice-board > a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 13px 30px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#notice-board > a:hover {
+    background-color: #219150;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.25);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .notices-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #notice-board .section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    #notice-board {
+        padding: 60px 6%;
+    }
+
+    #notice-board .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .notices-container {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .notices-container article {
+        padding: 25px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    #notice-board {
+        padding: 45px 5%;
+    }
+
+    #notice-board .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .notices-container article h3 {
+        font-size: 18px;
+    }
+
+    .notices-container article p {
+        font-size: 14px;
+    }
+
+    .notices-container article time {
+        font-size: 12px;
+    }
+
+    #notice-board > a {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
