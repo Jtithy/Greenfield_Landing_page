@@ -1460,3 +1460,171 @@ nav {
         padding: 12px 10px 12px 38px;
     }
 }
+
+/* ADMISSION PROCESS */
+
+#admission {
+    padding: 80px 8%;
+    background-color: #ffffff;
+}
+
+/* Section Heading */
+#admission .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+#admission .section-heading p {
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#admission .section-heading h2 {
+    color: #243447;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Admission Steps */
+.admission-steps {
+    max-width: 1150px;
+    margin: 0 auto 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.admission-steps article {
+    position: relative;
+    padding: 30px 22px;
+    background-color: #f8fafc;
+    border-radius: 14px;
+    border-bottom: 4px solid #27ae60;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.admission-steps article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    background-color: #f0fff5;
+}
+
+.admission-steps article h3 {
+    color: #243447;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.admission-steps article p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Admission Requirements */
+.admission-requirements {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background-color: #f8fafc;
+    border-radius: 16px;
+    border-left: 5px solid #f39c12;
+}
+
+.admission-requirements h3 {
+    color: #243447;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.admission-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 25px;
+}
+
+.admission-requirements ul li {
+    position: relative;
+    padding-left: 28px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.admission-requirements ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #27ae60;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .admission-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #admission {
+        padding: 60px 6%;
+    }
+
+    #admission .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .admission-requirements {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #admission {
+        padding: 45px 5%;
+    }
+
+    #admission .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .admission-steps {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .admission-steps article {
+        padding: 25px 20px;
+    }
+
+    .admission-steps article h3 {
+        font-size: 18px;
+    }
+
+    .admission-requirements {
+        padding: 25px 20px;
+    }
+
+    .admission-requirements h3 {
+        font-size: 21px;
+    }
+
+    .admission-requirements ul {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+}
