@@ -1004,3 +1004,158 @@ nav {
         font-size: 19px;
     }
 }
+
+/* TEACHING & LEARNING APPROACH */
+
+#teaching-approach {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    background-color: #f8faf9;
+}
+
+#teaching-approach .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+#teaching-approach .section-heading p {
+    color: #198754;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+#teaching-approach .section-heading h2 {
+    color: #174d35;
+    font-size: 36px;
+    margin: 0;
+}
+
+.teaching-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.teaching-image,
+.teaching-text {
+    flex: 1;
+}
+
+.teaching-image {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-image img {
+    width: 100%;
+    height: 420px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.teaching-image:hover img {
+    transform: scale(1.05);
+}
+
+.teaching-text h3 {
+    color: #174d35;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.teaching-text p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.teaching-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teaching-text ul li {
+    color: #444444;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.teaching-text ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f5ee;
+    color: #198754;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    #teaching-approach {
+        padding: 60px 25px;
+    }
+
+    #teaching-approach .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .teaching-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .teaching-image,
+    .teaching-text {
+        width: 100%;
+    }
+
+    .teaching-image img {
+        height: 350px;
+    }
+
+    .teaching-text h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #teaching-approach {
+        padding: 50px 20px;
+    }
+
+    #teaching-approach .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .teaching-image img {
+        height: 250px;
+    }
+
+    .teaching-text h3 {
+        font-size: 22px;
+    }
+
+    .teaching-text p,
+    .teaching-text ul li {
+        font-size: 15px;
+    }
+}
