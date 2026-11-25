@@ -637,3 +637,156 @@ nav {
     }
 
 }
+
+/* OUR SERVICES */
+
+#services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    background-color: #f8faf9;
+}
+
+/* Section Heading */
+
+#services .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#services .section-heading p {
+    color: #198754;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+#services .section-heading h2 {
+    color: #174d35;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Services Container */
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Service Card */
+
+.service-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+
+    border: 1px solid #eeeeee;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.3s ease;
+}
+
+/* Card Hover */
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #198754;
+    box-shadow: 0 12px 30px rgba(25, 135, 84, 0.12);
+}
+
+/* Service Icon (CSS Only) */
+
+.service-card::before {
+    content: "✓";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 22px;
+
+    background-color: #e8f5ee;
+    color: #198754;
+
+    border-radius: 50%;
+    font-size: 26px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.service-card:hover::before {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+/* Service Title */
+
+.service-card h3 {
+    color: #174d35;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Service Description */
+
+.service-card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* RESPONSIVE SERVICES */
+
+/* Tablet */
+
+@media screen and (max-width: 992px) {
+
+    #services {
+        padding: 70px 25px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+
+    #services {
+        padding: 50px 20px;
+    }
+
+    #services .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+}
