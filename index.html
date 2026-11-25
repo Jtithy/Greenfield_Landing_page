@@ -483,89 +483,155 @@
             <li>Parent/Guardian Information</li>
           </ul>
         </div>
+
+        <!-- Admission Enquiry Form -->
+        <div class="admission-form">
+          <h3>Admission Enquiry Form</h3>
+          <form action="#" method="post">
+            <label for="parent-name">Parent/Guardian Name</label>
+            <input type="text" id="parent-name" name="parent_name" required />
+
+            <label for="student-name">Student Name</label>
+            <input type="text" id="student-name" name="student_name" required />
+
+            <label for="student-age">Student Age</label>
+            <input
+              type="number"
+              id="student-age"
+              name="student_age"
+              min="1"
+              required
+            />
+
+            <label for="class">Applying For</label>
+            <select id="class" name="class" required>
+              <option value="">Select Class</option>
+              <option value="kg">Kindergarten (KG)</option>
+              <option value="class-1">Class 1</option>
+              <option value="class-2">Class 2</option>
+              <option value="class-3">Class 3</option>
+              <option value="class-4">Class 4</option>
+              <option value="class-5">Class 5</option>
+            </select>
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="message">Additional Information</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+          </form>
+        </div>
       </section>
 
-      <!-- Admission Enquiry Form -->
-            <div class="admission-form">
-                <h3>Admission Enquiry Form</h3>
-                <form action="#" method="post">
+      <!-- NOTICE BOARD -->
+      <section id="notice-board">
+        <div class="section-heading">
+          <p>Stay Updated</p>
+          <h2>Notice Board & Announcements</h2>
+        </div>
 
-                    <label for="parent-name">Parent/Guardian Name</label>
-                    <input type="text" id="parent-name"
-                           name="parent_name" required>
+        <div class="notices-container">
+          <article>
+            <time datetime="2026-12-01">December 01, 2026</time>
+            <h3>Admission Open for New Session</h3>
+            <p>Admission enquiries are now being accepted.</p>
+            <a href="#">Read More</a>
+          </article>
 
-                    <label for="student-name">Student Name</label>
-                    <input type="text" id="student-name"
-                           name="student_name" required>
+          <article>
+            <time datetime="2026-12-10">December 10, 2026</time>
+            <h3>Annual Examination Notice</h3>
+            <p>Important information about upcoming examinations.</p>
+            <a href="#">Read More</a>
+          </article>
 
-                    <label for="student-age">Student Age</label>
-                    <input type="number" id="student-age"
-                           name="student_age" min="1" required>
+          <article>
+            <time datetime="2026-12-15">December 15, 2026</time>
+            <h3>School Holiday Announcement</h3>
+            <p>Check the latest school holiday information.</p>
+            <a href="#">Read More</a>
+          </article>
+        </div>
 
-                    <label for="class">Applying For</label>
-                    <select id="class" name="class" required>
-                        <option value="">Select Class</option>
-                        <option value="kg">Kindergarten (KG)</option>
-                        <option value="class-1">Class 1</option>
-                        <option value="class-2">Class 2</option>
-                        <option value="class-3">Class 3</option>
-                        <option value="class-4">Class 4</option>
-                        <option value="class-5">Class 5</option>
-                    </select>
+        <a href="#">View All Notices</a>
+      </section>
 
-                    <label for="phone">Contact Number</label>
-                    <input type="tel" id="phone"
-                           name="phone" required>
+      <!-- EVENTS & GALLERY -->
+      <section id="events-gallery">
+        <div class="section-heading">
+          <p>School Life</p>
+          <h2>Events & School Gallery</h2>
+        </div>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email">
+        <div class="upcoming-events">
+          <h3>Upcoming Events</h3>
 
-                    <label for="message">Additional Information</label>
-                    <textarea id="message" name="message"
-                              rows="4"></textarea>
+          <article>
+            <time datetime="2026-12-20">December 20, 2026</time>
+            <h4>Annual Sports Day</h4>
+            <p>Our annual sports and athletic competition.</p>
+          </article>
 
-                    <button type="submit">Submit Enquiry</button>
-                </form>
-            </div>
-        </section>
+          <article>
+            <time datetime="2027-01-15">January 15, 2027</time>
+            <h4>Annual Cultural Program</h4>
+            <p>A celebration of student talent and creativity.</p>
+          </article>
+        </div>
 
-        <!-- NOTICE BOARD -->
-        <section id="notice-board">
+        <div class="school-gallery">
+          <h3>School Memories</h3>
 
-            <div class="section-heading">
-                <p>Stay Updated</p>
-                <h2>Notice Board & Announcements</h2>
-            </div>
+          <figure>
+            <img
+              src="assets/images/gallery-1.jpg"
+              alt="Students participating in classroom activities"
+            />
+            <figcaption>Classroom Activities</figcaption>
+          </figure>
 
-            <div class="notices-container">
+          <figure>
+            <img
+              src="assets/images/sports.jpg"
+              alt="Annual sports competition"
+            />
+            <figcaption>Sports Competition</figcaption>
+          </figure>
 
-                <article>
-                    <time datetime="2026-12-01">December 01, 2026</time>
-                    <h3>Admission Open for New Session</h3>
-                    <p>Admission enquiries are now being accepted.</p>
-                    <a href="#">Read More</a>
-                </article>
+          <figure>
+            <img
+              src="assets/images/cultural.jpg"
+              alt="School cultural program"
+            />
+            <figcaption>Cultural Program</figcaption>
+          </figure>
 
-                <article>
-                    <time datetime="2026-12-10">December 10, 2026</time>
-                    <h3>Annual Examination Notice</h3>
-                    <p>Important information about upcoming examinations.</p>
-                    <a href="#">Read More</a>
-                </article>
+          <figure>
+            <img
+              src="assets/images/educational-trip.jpg"
+              alt="Students participating in an educational trip"
+            />
+            <figcaption>Educational Trip</figcaption>
+          </figure>
 
-                <article>
-                    <time datetime="2026-12-15">December 15, 2026</time>
-                    <h3>School Holiday Announcement</h3>
-                    <p>Check the latest school holiday information.</p>
-                    <a href="#">Read More</a>
-                </article>
+          <figure>
+            <img src="assets/images/competition.jpg" alt="School celebration" />
+            <figcaption>School Celebration</figcaption>
+          </figure>
 
-            </div>
+          <figure>
+            <img src="assets/images/school-campus.jpg" alt="School campus" />
+            <figcaption>Our Campus</figcaption>
+          </figure>
+        </div>
 
-            <a href="#">View All Notices</a>
-
-        </section>
-
+        <a href="#">View Full Gallery</a>
+      </section>
     </main>
     <script src="assets/js/script.js"></script>
   </body>

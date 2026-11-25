@@ -1953,3 +1953,251 @@ nav {
         font-size: 14px;
     }
 }
+
+/* EVENTS & GALLERY */
+
+#events-gallery {
+    padding: 80px 8%;
+    background-color: #ffffff;
+}
+
+/* Section Heading */
+#events-gallery .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+#events-gallery .section-heading p {
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#events-gallery .section-heading h2 {
+    color: #243447;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* UPCOMING EVENTS */
+
+.upcoming-events {
+    max-width: 1150px;
+    margin: 0 auto 65px;
+}
+
+.upcoming-events > h3,
+.school-gallery > h3 {
+    color: #243447;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Event Cards */
+.upcoming-events article {
+    position: relative;
+    padding: 25px 30px;
+    margin-bottom: 18px;
+    background-color: #f8fafc;
+    border-left: 5px solid #27ae60;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.upcoming-events article:hover {
+    transform: translateX(7px);
+    background-color: #f0fff5;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Event Date */
+.upcoming-events article time {
+    display: inline-block;
+    color: #e69500;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Event Title */
+.upcoming-events article h4 {
+    color: #243447;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Event Description */
+.upcoming-events article p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* SCHOOL GALLERY */
+
+.school-gallery {
+    max-width: 1150px;
+    margin: 0 auto 40px;
+}
+
+.school-gallery > h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.school-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Gallery Heading */
+.school-gallery > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Gallery Figure */
+.school-gallery figure {
+    position: relative;
+    overflow: hidden;
+    height: 260px;
+    margin: 0;
+    border-radius: 13px;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+/* Gallery Image */
+.school-gallery figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.school-gallery figure:hover img {
+    transform: scale(1.1);
+}
+
+/* Gallery Caption */
+.school-gallery figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.75)
+    );
+    transition: all 0.3s ease;
+}
+
+.school-gallery figure:hover figcaption {
+    padding-bottom: 25px;
+}
+
+/* VIEW FULL GALLERY BUTTON */
+
+#events-gallery > a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 13px 30px;
+    background-color: #27ae60;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#events-gallery > a:hover {
+    background-color: #219150;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.25);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .school-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #events-gallery .section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    #events-gallery {
+        padding: 60px 6%;
+    }
+
+    #events-gallery .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .upcoming-events {
+        margin-bottom: 50px;
+    }
+
+    .upcoming-events > h3,
+    .school-gallery > h3 {
+        font-size: 23px;
+    }
+
+    .school-gallery figure {
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    #events-gallery {
+        padding: 45px 5%;
+    }
+
+    #events-gallery .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .upcoming-events article {
+        padding: 22px 18px;
+    }
+
+    .upcoming-events article h4 {
+        font-size: 18px;
+    }
+
+    .upcoming-events article p {
+        font-size: 14px;
+    }
+
+    .school-gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .school-gallery figure {
+        height: 240px;
+    }
+
+    #events-gallery > a {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
