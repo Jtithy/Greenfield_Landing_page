@@ -1628,3 +1628,148 @@ nav {
         gap: 13px;
     }
 }
+
+/* ADMISSION ENQUIRY FORM */
+
+.admission-form {
+    max-width: 750px;
+    margin: 60px auto 0;
+    padding: 40px 45px;
+    background-color: #f8fafc;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    border-top: 5px solid #27ae60;
+}
+
+/* Form Heading */
+.admission-form h3 {
+    color: #243447;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Layout */
+.admission-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.admission-form label {
+    color: #344054;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dce2e8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+.admission-form input:focus,
+.admission-form select:focus,
+.admission-form textarea:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.12);
+}
+
+/* Placeholder */
+.admission-form input::placeholder,
+.admission-form textarea::placeholder {
+    color: #999;
+}
+
+/* Select Dropdown */
+.admission-form select {
+    cursor: pointer;
+}
+
+/* Textarea */
+.admission-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Submit Button */
+.admission-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admission-form button:hover {
+    background-color: #219150;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.25);
+}
+
+.admission-form button:active {
+    transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .admission-form {
+        width: 100%;
+        padding: 35px 25px;
+        margin-top: 45px;
+    }
+
+    .admission-form h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admission-form {
+        padding: 28px 18px;
+        border-radius: 12px;
+    }
+
+    .admission-form h3 {
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+
+    .admission-form label {
+        font-size: 14px;
+    }
+
+    .admission-form input,
+    .admission-form select,
+    .admission-form textarea {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 17px;
+    }
+
+    .admission-form button {
+        padding: 13px;
+        font-size: 15px;
+    }
+}

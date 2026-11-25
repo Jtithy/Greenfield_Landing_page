@@ -444,51 +444,90 @@
       </section>
 
       <!-- ADMISSION PROCESS -->
-        <section id="admission">
+      <section id="admission">
+        <div class="section-heading">
+          <p>Join Our School</p>
+          <h2>Admission Process</h2>
+        </div>
 
-            <div class="section-heading">
-                <p>Join Our School</p>
-                <h2>Admission Process</h2>
+        <div class="admission-steps">
+          <article>
+            <h3>Step 01: Enquiry</h3>
+            <p>Contact the school for admission information.</p>
+          </article>
+
+          <article>
+            <h3>Step 02: Application</h3>
+            <p>Collect and submit the admission application form.</p>
+          </article>
+
+          <article>
+            <h3>Step 03: Assessment</h3>
+            <p>Complete the required admission assessment or interview.</p>
+          </article>
+
+          <article>
+            <h3>Step 04: Confirmation</h3>
+            <p>Complete admission formalities and fee payment.</p>
+          </article>
+        </div>
+
+        <div class="admission-requirements">
+          <h3>Admission Requirements</h3>
+
+          <ul>
+            <li>Completed Admission Form</li>
+            <li>Student's Birth Registration Certificate</li>
+            <li>Recent Passport-size Photographs</li>
+            <li>Previous School Records (if applicable)</li>
+            <li>Parent/Guardian Information</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Admission Enquiry Form -->
+            <div class="admission-form">
+                <h3>Admission Enquiry Form</h3>
+                <form action="#" method="post">
+
+                    <label for="parent-name">Parent/Guardian Name</label>
+                    <input type="text" id="parent-name"
+                           name="parent_name" required>
+
+                    <label for="student-name">Student Name</label>
+                    <input type="text" id="student-name"
+                           name="student_name" required>
+
+                    <label for="student-age">Student Age</label>
+                    <input type="number" id="student-age"
+                           name="student_age" min="1" required>
+
+                    <label for="class">Applying For</label>
+                    <select id="class" name="class" required>
+                        <option value="">Select Class</option>
+                        <option value="kg">Kindergarten (KG)</option>
+                        <option value="class-1">Class 1</option>
+                        <option value="class-2">Class 2</option>
+                        <option value="class-3">Class 3</option>
+                        <option value="class-4">Class 4</option>
+                        <option value="class-5">Class 5</option>
+                    </select>
+
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone"
+                           name="phone" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message"
+                              rows="4"></textarea>
+
+                    <button type="submit">Submit Enquiry</button>
+                </form>
             </div>
-
-            <div class="admission-steps">
-
-                <article>
-                    <h3>Step 01: Enquiry</h3>
-                    <p>Contact the school for admission information.</p>
-                </article>
-
-                <article>
-                    <h3>Step 02: Application</h3>
-                    <p>Collect and submit the admission application form.</p>
-                </article>
-
-                <article>
-                    <h3>Step 03: Assessment</h3>
-                    <p>Complete the required admission assessment or interview.</p>
-                </article>
-
-                <article>
-                    <h3>Step 04: Confirmation</h3>
-                    <p>Complete admission formalities and fee payment.</p>
-                </article>
-
-            </div>
-
-
-            <div class="admission-requirements">
-
-                <h3>Admission Requirements</h3>
-
-                <ul>
-                    <li>Completed Admission Form</li>
-                    <li>Student's Birth Registration Certificate</li>
-                    <li>Recent Passport-size Photographs</li>
-                    <li>Previous School Records (if applicable)</li>
-                    <li>Parent/Guardian Information</li>
-                </ul>
-
-            </div>
+        </section>
     </main>
     <script src="assets/js/script.js"></script>
   </body>
