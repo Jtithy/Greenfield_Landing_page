@@ -2359,3 +2359,148 @@ nav {
         font-size: 14px;
     }
 }
+
+/* TESTIMONIALS */
+
+#testimonials {
+    padding: 80px 8%;
+    background-color: #ffffff;
+}
+
+/* Section Heading */
+#testimonials .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+#testimonials .section-heading p {
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#testimonials .section-heading h2 {
+    color: #243447;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    position: relative;
+    padding: 35px 28px;
+    background-color: #f8fafc;
+    border-radius: 14px;
+    border-bottom: 4px solid #27ae60;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    background-color: #f0fff5;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+/* Quote Decoration */
+.testimonial-card::before {
+    content: "“";
+    display: block;
+    color: #27ae60;
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 0.8;
+    margin-bottom: 18px;
+}
+
+/* Testimonial Text */
+.testimonial-card blockquote {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.9;
+    font-style: italic;
+    margin: 0 0 25px;
+}
+
+/* Parent Name */
+.testimonial-card h3 {
+    color: #243447;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+/* Student Information */
+.testimonial-card p {
+    color: #27ae60;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #testimonials .section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    #testimonials {
+        padding: 60px 6%;
+    }
+
+    #testimonials .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .testimonial-card {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #testimonials {
+        padding: 45px 5%;
+    }
+
+    #testimonials .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .testimonial-card {
+        padding: 25px 22px;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 14px;
+    }
+
+    .testimonial-card h3 {
+        font-size: 17px;
+    }
+}
+
