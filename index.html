@@ -3,24 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greenfield</title>
+    <title>Greenfield School | Kindergarten to Class 5, Dhaka</title>
+    <meta
+      name="description"
+      content="Greenfield School in Dhaka offers Kindergarten to Class 5 in a safe, supportive environment. Apply for admission online."
+    />
+    <meta name="theme-color" content="#198754" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <!-- HEADER & NAVBAR -->
     <header>
       <nav aria-label="Main Navigation">
         <div class="nav-logo">
           <a href="#home">
-            <img src="assets/images/logo.png" alt="Greenfield School Logo" />
+            <img
+              src="assets/images/logo.png"
+              alt="Greenfield School Logo"
+              width="400"
+              height="223"
+            />
             <span>Greenfield School</span>
           </a>
         </div>
 
-        <ul class="nav-links">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#facilities">Facilities</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -32,7 +55,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <!-- HERO SECTION -->
       <section id="home">
         <div class="hero-content">
@@ -53,6 +76,9 @@
           <img
             src="assets/images/school-campus.jpg"
             alt="Greenfield School Campus"
+            width="612"
+            height="313"
+            fetchpriority="high"
           />
         </div>
       </section>
@@ -69,6 +95,9 @@
             <img
               src="assets/images/about-school.jpg"
               alt="Greenfield School Building"
+              width="740"
+              height="494"
+              loading="lazy"
             />
           </div>
 
@@ -110,7 +139,13 @@
 
         <div class="academic-programs">
           <article class="program-card">
-            <img src="assets/images/kg.jpg" alt="Kindergarten Program" />
+            <img
+              src="assets/images/kg.jpg"
+              alt="Kindergarten Program"
+              width="554"
+              height="554"
+              loading="lazy"
+            />
 
             <h3>Kindergarten (KG)</h3>
 
@@ -128,7 +163,13 @@
           </article>
 
           <article class="program-card">
-            <img src="assets/images/class-1.jpg" alt="Class 1 Students" />
+            <img
+              src="assets/images/class-1.jpg"
+              alt="Class 1 Students"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
 
             <h3>Class 1</h3>
 
@@ -146,7 +187,13 @@
           </article>
 
           <article class="program-card">
-            <img src="assets/images/class-2.jpg" alt="Class 2 Students" />
+            <img
+              src="assets/images/class-2.jpg"
+              alt="Class 2 Students"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
 
             <h3>Class 2</h3>
 
@@ -164,7 +211,13 @@
           </article>
 
           <article class="program-card">
-            <img src="assets/images/class-3.jpg" alt="Class 3 Students" />
+            <img
+              src="assets/images/class-3.jpg"
+              alt="Class 3 Students"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
 
             <h3>Class 3</h3>
 
@@ -183,7 +236,13 @@
           </article>
 
           <article class="program-card">
-            <img src="assets/images/class-4.jpg" alt="Class 4 Students" />
+            <img
+              src="assets/images/class-4.jpg"
+              alt="Class 4 Students"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
 
             <h3>Class 4</h3>
 
@@ -202,7 +261,13 @@
           </article>
 
           <article class="program-card">
-            <img src="assets/images/class-5.jpg" alt="Class 5 Students" />
+            <img
+              src="assets/images/class-5.jpg"
+              alt="Class 5 Students"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
 
             <h3>Class 5</h3>
 
@@ -306,19 +371,37 @@
 
         <div class="facilities-container">
           <article>
-            <img src="assets/images/classroom.jpg" alt="School Classroom" />
+            <img
+              src="assets/images/classroom.jpg"
+              alt="School Classroom"
+              width="740"
+              height="396"
+              loading="lazy"
+            />
             <h3>Modern Classrooms</h3>
             <p>Comfortable and student-friendly classrooms.</p>
           </article>
 
           <article>
-            <img src="assets/images/library.jpg" alt="School Library" />
+            <img
+              src="assets/images/library.jpg"
+              alt="School Library"
+              width="612"
+              height="408"
+              loading="lazy"
+            />
             <h3>School Library</h3>
             <p>A collection of books for reading and research.</p>
           </article>
 
           <article>
-            <img src="assets/images/playground.jpg" alt="School Playground" />
+            <img
+              src="assets/images/playground.jpg"
+              alt="School Playground"
+              width="800"
+              height="534"
+              loading="lazy"
+            />
             <h3>Playground</h3>
             <p>Space for sports, exercise and outdoor activities.</p>
           </article>
@@ -327,6 +410,9 @@
             <img
               src="assets/images/safety.jpg"
               alt="School Safety Facilities"
+              width="1400"
+              height="933"
+              loading="lazy"
             />
             <h3>Safety Facilities</h3>
             <p>Security arrangements and student protection.</p>
@@ -346,6 +432,9 @@
             <img
               src="assets/images/teaching.jpg"
               alt="Teacher conducting a classroom lesson"
+              width="900"
+              height="900"
+              loading="lazy"
             />
           </div>
 
@@ -377,13 +466,25 @@
 
         <div class="activities-container">
           <article>
-            <img src="assets/images/sports.jpg" alt="School Sports" />
+            <img
+              src="assets/images/sports.jpg"
+              alt="School Sports"
+              width="740"
+              height="482"
+              loading="lazy"
+            />
             <h3>Sports</h3>
             <p>Physical activities and sports competitions.</p>
           </article>
 
           <article>
-            <img src="assets/images/cultural.jpg" alt="Cultural Programs" />
+            <img
+              src="assets/images/cultural.jpg"
+              alt="Cultural Programs"
+              width="678"
+              height="452"
+              loading="lazy"
+            />
             <h3>Cultural Programs</h3>
             <p>Music, dance, art and cultural celebrations.</p>
           </article>
@@ -392,6 +493,9 @@
             <img
               src="assets/images/competition.jpg"
               alt="Student Competitions"
+              width="800"
+              height="534"
+              loading="lazy"
             />
             <h3>Competitions</h3>
             <p>Quiz, drawing, debate and creative competitions.</p>
@@ -401,6 +505,9 @@
             <img
               src="assets/images/educational-trip.jpg"
               alt="Educational Trip"
+              width="1400"
+              height="600"
+              loading="lazy"
             />
             <h3>Educational Trips</h3>
             <p>Learning through educational visits and exploration.</p>
@@ -420,6 +527,9 @@
             <img
               src="assets/images/student-care.jpg"
               alt="Students receiving care at school"
+              width="554"
+              height="554"
+              loading="lazy"
             />
           </div>
 
@@ -487,7 +597,12 @@
         <!-- Admission Enquiry Form -->
         <div class="admission-form">
           <h3>Admission Enquiry Form</h3>
-          <form action="#" method="post">
+          <form
+            id="admission-form"
+            action="#"
+            method="post"
+            data-subject="Admission enquiry"
+          >
             <label for="parent-name">Parent/Guardian Name</label>
             <input type="text" id="parent-name" name="parent_name" required />
 
@@ -499,7 +614,8 @@
               type="number"
               id="student-age"
               name="student_age"
-              min="1"
+              min="3"
+              max="12"
               required
             />
 
@@ -523,7 +639,23 @@
             <label for="message">Additional Information</label>
             <textarea id="message" name="message" rows="4"></textarea>
 
-            <button type="submit">Submit Enquiry</button>
+            <p class="hp-field" aria-hidden="true">
+              <label
+                >Leave blank
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+              /></label>
+            </p>
+
+            <button type="submit">Send enquiry</button>
+            <p class="form-note">
+              We use these details only to respond to your enquiry. See our
+              <a href="#">Privacy Policy</a>.
+            </p>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -591,6 +723,9 @@
             <img
               src="assets/images/gallery-1.jpg"
               alt="Students participating in classroom activities"
+              width="612"
+              height="411"
+              loading="lazy"
             />
             <figcaption>Classroom Activities</figcaption>
           </figure>
@@ -599,6 +734,9 @@
             <img
               src="assets/images/sports.jpg"
               alt="Annual sports competition"
+              width="740"
+              height="482"
+              loading="lazy"
             />
             <figcaption>Sports Competition</figcaption>
           </figure>
@@ -607,6 +745,9 @@
             <img
               src="assets/images/cultural.jpg"
               alt="School cultural program"
+              width="678"
+              height="452"
+              loading="lazy"
             />
             <figcaption>Cultural Program</figcaption>
           </figure>
@@ -615,17 +756,32 @@
             <img
               src="assets/images/educational-trip.jpg"
               alt="Students participating in an educational trip"
+              width="1400"
+              height="600"
+              loading="lazy"
             />
             <figcaption>Educational Trip</figcaption>
           </figure>
 
           <figure>
-            <img src="assets/images/competition.jpg" alt="School celebration" />
+            <img
+              src="assets/images/competition.jpg"
+              alt="School celebration"
+              width="800"
+              height="534"
+              loading="lazy"
+            />
             <figcaption>School Celebration</figcaption>
           </figure>
 
           <figure>
-            <img src="assets/images/school-campus.jpg" alt="School campus" />
+            <img
+              src="assets/images/school-campus.jpg"
+              alt="School campus"
+              width="612"
+              height="313"
+              loading="lazy"
+            />
             <figcaption>Our Campus</figcaption>
           </figure>
         </div>
@@ -693,6 +849,7 @@
             </blockquote>
 
             <h3>Parent Name</h3>
+            <!-- TODO: real, consented testimonial -->
             <p>Parent of a Class 2 Student</p>
           </article>
 
@@ -703,6 +860,7 @@
             </blockquote>
 
             <h3>Parent Name</h3>
+            <!-- TODO: real, consented testimonial -->
             <p>Parent of a Class 4 Student</p>
           </article>
 
@@ -713,6 +871,7 @@
             </blockquote>
 
             <h3>Parent Name</h3>
+            <!-- TODO: real, consented testimonial -->
             <p>Parent of a KG Student</p>
           </article>
         </div>
@@ -785,6 +944,7 @@
           <div class="contact-information">
             <h3>School Information</h3>
 
+            <!-- TODO: replace placeholder address, phone, map query below -->
             <address>
               Greenfield School<br />
               School Address<br />
@@ -813,7 +973,12 @@
           <div class="contact-form">
             <h3>Send Us a Message</h3>
 
-            <form action="#" method="post">
+            <form
+              id="contact-form"
+              action="#"
+              method="post"
+              data-subject="Website message"
+            >
               <label for="contact-name">Your Name</label>
               <input type="text" id="contact-name" name="name" required />
 
@@ -834,7 +999,19 @@
                 required
               ></textarea>
 
-              <button type="submit">Send Message</button>
+              <p class="hp-field" aria-hidden="true">
+                <label
+                  >Leave blank
+                  <input
+                    type="text"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                /></label>
+              </p>
+
+              <button type="submit">Send message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
             </form>
           </div>
         </div>
@@ -867,7 +1044,13 @@
             character development.
           </p>
 
-          <img src="assets/images/logo.png" alt="Greenfield School Logo" />
+          <img
+            src="assets/images/logo.png"
+            alt="Greenfield School Logo"
+            width="400"
+            height="223"
+            loading="lazy"
+          />
         </div>
 
         <!-- Quick Links -->
