@@ -147,6 +147,13 @@ nav {
     color: #198754;
 }
 
+/* Current Section */
+
+.nav-links a[aria-current="true"] {
+  color: #198754;
+  font-weight: 600;
+}
+
 /* Admission Button */
 
 .nav-cta a {
