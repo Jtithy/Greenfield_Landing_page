@@ -3000,3 +3000,203 @@ nav {
         height: 250px;
     }
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #243447;
+    color: #ffffff;
+    padding: 65px 8% 0;
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 0.8fr 1fr;
+    gap: 35px;
+}
+
+/*  FOOTER ABOUT */
+
+.footer-about h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-about p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.footer-about img {
+    width: 100px;
+    height: auto;
+    max-height: 85px;
+    object-fit: contain;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* FOOTER HEADINGS */
+
+.footer-links h3,
+.footer-hours h3,
+.footer-social h3,
+.footer-policies h3 {
+    color: #f39c12;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+/* FOOTER LISTS */
+
+.footer-links ul,
+.footer-social ul,
+.footer-policies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li,
+.footer-policies ul li {
+    margin-bottom: 13px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a,
+.footer-policies ul li a {
+    color: #cbd5e1;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover,
+.footer-policies ul li a:hover {
+    color: #27ae60;
+    padding-left: 5px;
+}
+
+/* SCHOOL HOURS */
+
+.footer-hours p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #aebbc9;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px 25px;
+    }
+
+    .footer-about {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 55px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 25px;
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 45px 5% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 18px;
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+
+    .footer-about h2 {
+        font-size: 22px;
+    }
+
+    .footer-links h3,
+    .footer-hours h3,
+    .footer-social h3,
+    .footer-policies h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .footer-links ul li a,
+    .footer-social ul li a,
+    .footer-policies ul li a,
+    .footer-hours p {
+        font-size: 13px;
+    }
+
+    .footer-about p {
+        font-size: 13px;
+    }
+
+    .footer-about img {
+        width: 85px;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
