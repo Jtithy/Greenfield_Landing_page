@@ -2201,3 +2201,161 @@ nav {
         font-size: 14px;
     }
 }
+
+/* PARENT & GUARDIAN CORNER */
+
+#parents-corner {
+    padding: 80px 8%;
+    background-color: #f8fafc;
+}
+
+/* Section Heading */
+#parents-corner .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#parents-corner .section-heading p {
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#parents-corner .section-heading h2 {
+    color: #243447;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* PARENT SERVICES */
+
+.parent-services {
+    max-width: 1150px;
+    margin: 0 auto 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Service Cards */
+.parent-services article {
+    position: relative;
+    padding: 30px 30px 30px 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border-left: 5px solid #27ae60;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.parent-services article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+    border-left-color: #f39c12;
+}
+
+/* Service Title */
+.parent-services article h3 {
+    color: #243447;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+/* Service Description */
+.parent-services article p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* PARENT CTA */
+
+.parent-cta {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.parent-cta a {
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #27ae60;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.parent-cta a:hover {
+    background-color: #219150;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.25);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .parent-services {
+        gap: 20px;
+    }
+
+    #parents-corner .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .parent-services article {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #parents-corner {
+        padding: 60px 6%;
+    }
+
+    #parents-corner .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .parent-services {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .parent-services article h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #parents-corner {
+        padding: 45px 5%;
+    }
+
+    #parents-corner .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .parent-services article {
+        padding: 23px 20px;
+    }
+
+    .parent-services article h3 {
+        font-size: 18px;
+    }
+
+    .parent-services article p {
+        font-size: 14px;
+    }
+
+    .parent-cta a {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+}
